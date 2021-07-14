@@ -1,7 +1,9 @@
 const counter = document.getElementById("counter");
 const plus = document.getElementById("plus");
 const display = document.getElementById("display");
+
 let number = 0;
+
 plus.onclick = function () {
   number += 1;
   counter.textContent = number;
@@ -10,7 +12,7 @@ plus.onclick = function () {
   } else {
     display.textContent = "👀　素数じゃない...";
   }
-  if (number > 50 && number <= 100) {
+  if (50 < number && number <= 100) {
     display.textContent += "...暇なの？";
   }
   if (number > 100) {
@@ -18,11 +20,11 @@ plus.onclick = function () {
   }
 };
 const isPrimeNumber = function (n) {
-  if (n == 1) {
+  if (n === 1) {
     return false;
   }
   for (let i = 2; i < n; i++) {
-    if (n % i == 0) {
+    if (n % i === 0) {
       return false;
     }
   }
