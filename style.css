@@ -39,8 +39,13 @@ body {
 .portfolio__profile__name__en {
   font-size: 6vmin;
 }
+.portfolio__profile__links {
+  display: flex;
+  justify-content: space-around;
+}
 .portfolio__profile__links__element {
   font-size: 3vmin;
+  margin: 0 1vw 0 1vw;
 }
 
 .portfolio__prime-checker {
